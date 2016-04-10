@@ -25,6 +25,33 @@ img {
 	display: block;
 }
 
-h1 {
-	color: red;
+.headline {
+	font-size: 3em;
+	color: $pink;
+
+
+}
+
+.headline-box {
+	margin: 2em;
+
+}
+
+
+@media only screen and (min-width: 38em) {
+
+}
+
+@media only screen and (min-width: 60em) {
+
+	headline {
+		font-size: 6em;
+		text-align: right;
+	}
+
+}
+
+
+@media only screen and (min-width: 90em) {
+
 }

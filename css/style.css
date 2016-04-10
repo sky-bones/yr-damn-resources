@@ -1,4 +1,5 @@
 /* Variables */
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,700);
 @-moz-viewport {
   width: device-width;
   scale: 1;
@@ -41,8 +42,20 @@ img {
   display: block;
 }
 
-h1 {
-  color: red;
+.headline {
+  font-size: 3em;
+  color: #fb0055;
+}
+
+.headline-box {
+  margin: 2em;
+}
+
+@media only screen and (min-width: 60em) {
+  headline {
+    font-size: 6em;
+    text-align: right;
+  }
 }
 
 .grid {
@@ -497,7 +510,7 @@ h1 {
 }
 
 html {
-  font: normal 100%/1.5 Georgia,serif;
+  font: normal 100%/1.5 Poppins,sans-serif;
 }
 
 @media only screen and (min-width: 60em) {
