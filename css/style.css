@@ -51,10 +51,15 @@ img {
   margin: 2em;
 }
 
+@media only screen and (min-width: 38em) {
+  .headline {
+    font-size: 4.5em;
+  }
+}
+
 @media only screen and (min-width: 60em) {
-  headline {
+  .headline {
     font-size: 6em;
-    text-align: right;
   }
 }
 
