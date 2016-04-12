@@ -27,6 +27,7 @@ img {
 
 .headline {
 	font-size: 3em;
+	line-height: 50px;
 	color: $pink;
 
 
@@ -35,6 +36,17 @@ img {
 .headline-box {
 	margin: 2em;
 
+}
+
+
+
+
+.category {
+	@include category;
+}
+
+.category-type {
+		@include category-type;
 }
 
 @media only screen and (min-width: 25em) {
@@ -48,7 +60,9 @@ img {
 
 	.headline {
 		font-size: 4.5em;
+		line-height: 80px;
 	}
+
 
 }
 
@@ -56,7 +70,10 @@ img {
 
 	.headline {
 		font-size: 6em;
+		line-height: 110px;
+
 	}
+
 
 }
 
