@@ -34,23 +34,41 @@ body {
 	font-size: 3em;
 	line-height: 50px;
 	color: $pink;
-
-
 }
 
 .headline-box {
 	margin: 2em;
+}
 
+a {
+	text-decoration: none;
+	color:  $white;
 }
 
 
 .category {
 	background-color: $pink;
+	//margin: 5px;
 }
 
-.category-type {
-		@include category-type;
+.category:hover {
+	background-color: $black;
+
+	& a:hover {
+		border-bottom: solid 2px;
+	}
 }
+
+
+.category-type {
+	color: $white;
+  font-weight: bold;
+  //line-height: 60px;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+
 
 @media only screen and (min-width: 25em) {
 
@@ -67,6 +85,7 @@ body {
 	}
 
 
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -76,6 +95,10 @@ body {
 		line-height: 110px;
 
 	}
+
+	.category-type {
+		text-align: left;
+}
 
 
 }
