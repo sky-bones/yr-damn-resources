@@ -39,6 +39,11 @@ body {
 }
 
 
+.nav a {
+	color: black;
+}
+
+
 .nav-check:checked ~ .nav {
 	display: block;
 }
@@ -108,14 +113,30 @@ a {
 	color:  $white;
 }
 
+.miserable {
+	opacity: 1;
+	width: 100%;
+	display: block;
+}
+
+
+
+.miserable:hover {
+	opacity: 0;
+}
+
+
 
 .category {
-	background-color: $pink;
-	//margin: 5px;
+	background-color: $black;
+	position: relative;
+	display: block;
+	border: 10px solid $white;
 }
 
 .category:hover {
-	background-color: $black;
+
+//background-color: $black;
 
 	& a:hover {
 		border-bottom: solid 2px;
@@ -123,19 +144,26 @@ a {
 }
 
 
+
+
+
 .category-type {
+	position: absolute;
 	color: $white;
   font-weight: bold;
-  //line-height: 60px;
-  font-size: 2.5em;
-  text-align: center;
+  top: 33%;
+  font-size: 2.25em;
 }
+
+
 
 
 
 @media only screen and (min-width: 25em) {
 
-
+.category-type {
+	font-size: 2.15em;
+}
 
 }
 
@@ -145,6 +173,10 @@ a {
 	.headline {
 		font-size: 4.5em;
 		line-height: 80px;
+	}
+
+	.catagory-type {
+		font-size: 2em;
 	}
 
 
@@ -161,6 +193,7 @@ a {
 
 	.category-type {
 		text-align: left;
+		font-size: 1.75em;
 }
 
 
